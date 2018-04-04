@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title></title>
+      <style>
+      .slidecontainer {
+          width: 100%;
+      }
+
+      .slider {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 25px;
+          background: #d3d3d3;
+          outline: none;
+          opacity: 0.7;
+          -webkit-transition: .2s;
+          transition: opacity .2s;
+      }
+
+      .slider:hover {
+          opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color:black;
+      }
+      h1 {
+        text-align: center;
+        font-size: 70px;
+        border-bottom:3px ridge gray;
+        height: 150px;
+        margin-bottom:0px;
+      }
+      #buttons{
+        height:150px;
+        padding-left:50px;
+        padding-right:50px;
+        padding-top:100px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      ol{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        border-radius:10px 10px 10px 10px;
+      }
+
+      nav{
+        float:left;
+        border-right:3px ridge gray;
+        height:500px;
+        width: 250px;
+        margin-left:10px;
+      }
+      article{
+        margin-left:290px;
+      }
+      #nav{
+        margin-top:10px;
+      }
+     #script {
+    opacity:
+}
+      </style>
+  </head>
+  <body>
+    <h1><a href="index.html">MIXING</a></h1>
+  <nav>
+    <div id=nav>
+      <input type="text" onchange="alert('Thanks')">
+      <input type="button" value="search" onclick="alert('Thanks')">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
+    </div>
+      <div id=buttons>
+      <input type="button" value="Night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        document.querySelector('a').style.color='white';
+        if (document.querySelector('#night_day').value === 'Night mode-on'){
+        document.querySelector('#night_day').value = 'Night mode-off';
+        }
+        else {}
+      ">
+
+      <input type="button" value="Day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelector('a').style.color='black';
+      if (document.querySelector('#night_day').value === 'Night mode-off'){
+      document.querySelector('#night_day').value = 'Night mode-on';
+      }
+      else {}
+      ">
+      <input id="night_day" type="button" value="Night mode-on" onclick="
+      if (document.querySelector('#night_day').value === 'Night mode-on') {
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      document.querySelector('a').style.color='white';
+      document.querySelector('#night_day').value = 'Night mode-off';
+      }
+      else {
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelector('a').style.color='black';
+      document.querySelector('#night_day').value = 'Night mode-on';
+      }
+      ">
+    </br>
+      <input id="size" type="button" value="크게보기" onclick="
+      if (document.querySelector('#size').value === '크게보기'){
+      document.querySelector('p').style.fontSize='20px';
+      document.querySelector('#size').value = '원래대로';
+      }
+      else {
+      document.querySelector('p').style.fontSize='16px';
+      document.querySelector('#size').value = '크게보기';
+      }
+
+      ">
+
+
+</script>
+    </nav>
+    <article>
+      <h2>JavaScript</h2>
+      <p id=script>
+        <strong>Audio mixing</strong> is the process by which multiple sounds are combined into one or more channels. In the process, a source's volume level, frequency content, dynamics, and panoramic position are manipulated and or enhanced. Also, effects such as reverberation and echo may be added. This practical, aesthetic, or otherwise creative treatment is done in order to produce a finished version that is appealing to listeners.</br></br>
+Audio mixing is practiced for music, film, television and live sound. The process is generally carried out by a mixing engineer operating a mixing console or digital audio workstation.
+      </p>
+
+    </article>
+  </body>
+</html>
